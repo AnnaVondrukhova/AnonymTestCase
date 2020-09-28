@@ -31,14 +31,17 @@ class NetworkService {
         
         print("Data from internet")
         let session = URLSession.shared
+        
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             guard let data = data,
                 let response = response as? HTTPURLResponse,
                 error == nil else {
                     if let err = error as? URLError, [URLError.Code.notConnectedToInternet, URLError.Code.timedOut].contains(err.code) {
                         completion(nil, err.code.rawValue)
+                    } else {
+                        completion(nil, 500)
                     }
-                    completion(nil, 500)
+                    
                     return
             }
             

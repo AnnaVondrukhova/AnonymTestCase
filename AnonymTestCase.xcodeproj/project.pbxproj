@@ -37,7 +37,18 @@
 		C196969E251FC7CC0077BDE8 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196969D251FC7CC0077BDE8 /* PostManager.swift */; };
 		C19696A0251FD0700077BDE8 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196969F251FD0700077BDE8 /* AlertService.swift */; };
 		C19696BA2521DFD40077BDE8 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19696B92521DFD40077BDE8 /* PostHeaderCell.swift */; };
+		C19696C22521E6DF0077BDE8 /* AnonymTestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19696C12521E6DF0077BDE8 /* AnonymTestCaseTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19696C42521E6DF0077BDE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C196961E2519E3170077BDE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19696252519E3170077BDE8;
+			remoteInfo = AnonymTestCase;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C19696262519E3170077BDE8 /* AnonymTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnonymTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +83,20 @@
 		C196969D251FC7CC0077BDE8 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
 		C196969F251FD0700077BDE8 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		C19696B92521DFD40077BDE8 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		C19696BF2521E6DF0077BDE8 /* AnonymTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnonymTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19696C12521E6DF0077BDE8 /* AnonymTestCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonymTestCaseTests.swift; sourceTree = "<group>"; };
+		C19696C32521E6DF0077BDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C19696232519E3170077BDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19696BC2521E6DF0077BDE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C19696282519E3170077BDE8 /* AnonymTestCase */,
+				C19696C02521E6DF0077BDE8 /* AnonymTestCaseTests */,
 				C19696272519E3170077BDE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				C19696262519E3170077BDE8 /* AnonymTestCase.app */,
+				C19696BF2521E6DF0077BDE8 /* AnonymTestCaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +274,15 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		C19696C02521E6DF0077BDE8 /* AnonymTestCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				C19696C12521E6DF0077BDE8 /* AnonymTestCaseTests.swift */,
+				C19696C32521E6DF0077BDE8 /* Info.plist */,
+			);
+			path = AnonymTestCaseTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,6 +303,24 @@
 			productReference = C19696262519E3170077BDE8 /* AnonymTestCase.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C19696BE2521E6DF0077BDE8 /* AnonymTestCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19696C62521E6E00077BDE8 /* Build configuration list for PBXNativeTarget "AnonymTestCaseTests" */;
+			buildPhases = (
+				C19696BB2521E6DF0077BDE8 /* Sources */,
+				C19696BC2521E6DF0077BDE8 /* Frameworks */,
+				C19696BD2521E6DF0077BDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19696C52521E6DF0077BDE8 /* PBXTargetDependency */,
+			);
+			name = AnonymTestCaseTests;
+			productName = AnonymTestCaseTests;
+			productReference = C19696BF2521E6DF0077BDE8 /* AnonymTestCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,6 +333,10 @@
 				TargetAttributes = {
 					C19696252519E3170077BDE8 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					C19696BE2521E6DF0077BDE8 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = C19696252519E3170077BDE8;
 					};
 				};
 			};
@@ -300,6 +354,7 @@
 			projectRoot = "";
 			targets = (
 				C19696252519E3170077BDE8 /* AnonymTestCase */,
+				C19696BE2521E6DF0077BDE8 /* AnonymTestCaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +367,13 @@
 				C19696362519E31A0077BDE8 /* LaunchScreen.storyboard in Resources */,
 				C19696332519E31A0077BDE8 /* Assets.xcassets in Resources */,
 				C19696312519E3170077BDE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19696BD2521E6DF0077BDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +414,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19696BB2521E6DF0077BDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19696C22521E6DF0077BDE8 /* AnonymTestCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19696C52521E6DF0077BDE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19696252519E3170077BDE8 /* AnonymTestCase */;
+			targetProxy = C19696C42521E6DF0077BDE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C196962F2519E3170077BDE8 /* Main.storyboard */ = {
@@ -524,6 +602,46 @@
 			};
 			name = Release;
 		};
+		C19696C72521E6E00077BDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV8EDW43XJ;
+				INFOPLIST_FILE = AnonymTestCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anna.v.AnonymTestCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnonymTestCase.app/AnonymTestCase";
+			};
+			name = Debug;
+		};
+		C19696C82521E6E00077BDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV8EDW43XJ;
+				INFOPLIST_FILE = AnonymTestCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anna.v.AnonymTestCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnonymTestCase.app/AnonymTestCase";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +659,15 @@
 			buildConfigurations = (
 				C196963B2519E31A0077BDE8 /* Debug */,
 				C196963C2519E31A0077BDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19696C62521E6E00077BDE8 /* Build configuration list for PBXNativeTarget "AnonymTestCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19696C72521E6E00077BDE8 /* Debug */,
+				C19696C82521E6E00077BDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
